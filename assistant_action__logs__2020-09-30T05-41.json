@@ -1,0 +1,904 @@
+[
+  {
+    "textPayload": "MalformedResponse: Webhook error (206)",
+    "insertId": "1w9cvxlfu891aw",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.TEXT",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:41:39.516434295Z",
+    "severity": "ERROR",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "source": "JSON_RESPONSE_VALIDATION",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s",
+    "receiveTimestamp": "2020-09-30T16:41:39.525822237Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:41:39 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-/sb9YAsNqhz+jddMvwBmhw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=skc-Im60X8bTLLzvY9eAS5nIfXBI8scUCorcaGLV1WvRUoi_PDT2N4qXo4oW-xRTpAgMnxYEscrXqOApW39Fq8epDanf9dTkj17mqNuxwMS3bCR8BXUhd60keUDy1v2amSEknVsM_DbN0ndrAyvd_R8AiEeXv2nFsUJLRn9NUVc; expires=Thu, 01-Apr-2021 16:41:39 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[\\\"play_song-followup\\\"]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Playing song 1999 in the garage.  Would you like me to follow up?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }, {\n      \"intent\": \"72197180-3e2f-41ff-afbb-24be7a588995\"\n    }, {\n      \"intent\": \"198587ff-d456-4792-867b-d91e971a9825\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"code\": 14,\n      \"message\": \"Webhook error (206)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"83e70dc9-a1f8-4bb1-8afe-16a312c1b2e8\",\n      \"parameterNames\": [\"lms_song\"]\n    },\n    \"delegatedRequest\": {\n      \"delegatedRequest\": \"{\\n  \\\"id\\\": \\\"ce4084b1-9c68-4aaf-9e34-76716b277d88-77b242db\\\",\\n  \\\"lang\\\": \\\"en\\\",\\n  \\\"sessionId\\\": \\\"ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s\\\",\\n  \\\"timestamp\\\": \\\"2020-09-30T16:41:39.06Z\\\",\\n  \\\"result\\\": {\\n    \\\"source\\\": \\\"agent\\\",\\n    \\\"resolvedQuery\\\": \\\"1999\\\",\\n    \\\"action\\\": \\\"lms_dialog_intent\\\",\\n    \\\"actionIncomplete\\\": false,\\n    \\\"score\\\": 0.01,\\n    \\\"parameters\\\": {\\n      \\\"lms_player\\\": \\\"garage\\\",\\n      \\\"lms_command\\\": \\\"play song\\\",\\n      \\\"lms_song\\\": \\\"1999\\\",\\n      \\\"lms_artist\\\": \\\"\\\",\\n      \\\"lms_shuffle\\\": \\\"\\\"\\n    },\\n    \\\"contexts\\\": [{\\n      \\\"name\\\": \\\"play_song-followup\\\",\\n      \\\"lifespan\\\": 2,\\n      \\\"parameters\\\": {\\n        \\\"lms_player\\\": \\\"garage\\\",\\n        \\\"lms_player.original\\\": \\\"garage\\\",\\n        \\\"lms_command\\\": \\\"play song\\\",\\n        \\\"lms_song\\\": \\\"1999\\\",\\n        \\\"lms_song.original\\\": \\\"1999\\\",\\n        \\\"lms_artist\\\": \\\"\\\",\\n        \\\"lms_artist.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"actions_capability_account_linking\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"lms_player\\\": \\\"garage\\\",\\n        \\\"lms_player.original\\\": \\\"garage\\\",\\n        \\\"lms_command\\\": \\\"play song\\\",\\n        \\\"lms_song\\\": \\\"1999\\\",\\n        \\\"lms_song.original\\\": \\\"1999\\\",\\n        \\\"lms_artist\\\": \\\"\\\",\\n        \\\"lms_artist.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"actions_capability_media_response_audio\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"lms_player\\\": \\\"garage\\\",\\n        \\\"lms_player.original\\\": \\\"garage\\\",\\n        \\\"lms_command\\\": \\\"play song\\\",\\n        \\\"lms_song\\\": \\\"1999\\\",\\n        \\\"lms_song.original\\\": \\\"1999\\\",\\n        \\\"lms_artist\\\": \\\"\\\",\\n        \\\"lms_artist.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"actions_capability_screen_output\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"lms_player\\\": \\\"garage\\\",\\n        \\\"lms_player.original\\\": \\\"garage\\\",\\n        \\\"lms_command\\\": \\\"play song\\\",\\n        \\\"lms_song\\\": \\\"1999\\\",\\n        \\\"lms_song.original\\\": \\\"1999\\\",\\n        \\\"lms_artist\\\": \\\"\\\",\\n        \\\"lms_artist.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"actions_capability_audio_output\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"lms_player\\\": \\\"garage\\\",\\n        \\\"lms_player.original\\\": \\\"garage\\\",\\n        \\\"lms_command\\\": \\\"play song\\\",\\n        \\\"lms_song\\\": \\\"1999\\\",\\n        \\\"lms_song.original\\\": \\\"1999\\\",\\n        \\\"lms_artist\\\": \\\"\\\",\\n        \\\"lms_artist.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"google_assistant_input_type_voice\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"lms_player\\\": \\\"garage\\\",\\n        \\\"lms_player.original\\\": \\\"garage\\\",\\n        \\\"lms_command\\\": \\\"play song\\\",\\n        \\\"lms_song\\\": \\\"1999\\\",\\n        \\\"lms_song.original\\\": \\\"1999\\\",\\n        \\\"lms_artist\\\": \\\"\\\",\\n        \\\"lms_artist.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"__system_counters__\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"no-input\\\": 0.0,\\n        \\\"no-match\\\": 0.0,\\n        \\\"lms_player\\\": \\\"garage\\\",\\n        \\\"lms_player.original\\\": \\\"garage\\\",\\n        \\\"lms_command\\\": \\\"play song\\\",\\n        \\\"lms_song\\\": \\\"1999\\\",\\n        \\\"lms_song.original\\\": \\\"1999\\\",\\n        \\\"lms_artist\\\": \\\"\\\",\\n        \\\"lms_artist.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }],\\n    \\\"metadata\\\": {\\n      \\\"intentId\\\": \\\"83e70dc9-a1f8-4bb1-8afe-16a312c1b2e8\\\",\\n      \\\"intentName\\\": \\\"play_song\\\",\\n      \\\"webhookUsed\\\": \\\"true\\\",\\n      \\\"webhookForSlotFillingUsed\\\": \\\"false\\\",\\n      \\\"isFallbackIntent\\\": \\\"false\\\"\\n    },\\n    \\\"fulfillment\\\": {\\n      \\\"speech\\\": \\\"Playing song 1999 in the garage.  Would you like me to follow up?\\\",\\n      \\\"messages\\\": [{\\n        \\\"platform\\\": \\\"google\\\",\\n        \\\"textToSpeech\\\": \\\"Playing song 1999 in the garage.  Would you like me to follow up?\\\",\\n        \\\"lang\\\": \\\"en\\\",\\n        \\\"type\\\": \\\"simple_response\\\"\\n      }, {\\n        \\\"lang\\\": \\\"en\\\",\\n        \\\"type\\\": 0.0,\\n        \\\"speech\\\": \\\"Playing song 1999 in the garage.  Would you like me to follow up?\\\"\\n      }]\\n    }\\n  },\\n  \\\"status\\\": {\\n    \\\"code\\\": 200,\\n    \\\"errorType\\\": \\\"success\\\"\\n  },\\n  \\\"originalRequest\\\": {\\n    \\\"data\\\": {\\n      \\\"user\\\": {\\n        \\\"locale\\\": \\\"en-US\\\",\\n        \\\"lastSeen\\\": \\\"2020-09-30T16:41:32Z\\\",\\n        \\\"userVerificationStatus\\\": \\\"VERIFIED\\\"\\n      },\\n      \\\"conversation\\\": {\\n        \\\"conversationId\\\": \\\"ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s\\\",\\n        \\\"type\\\": \\\"ACTIVE\\\",\\n        \\\"conversationToken\\\": \\\"[\\\\\\\"83e70dc9-a1f8-4bb1-8afe-16a312c1b2e8_id_dialog_context\\\\\\\",\\\\\\\"play_song_dialog_context\\\\\\\",\\\\\\\"play_song_dialog_params_lms_song\\\\\\\",\\\\\\\"actions_capability_account_linking\\\\\\\",\\\\\\\"actions_capability_media_response_audio\\\\\\\",\\\\\\\"actions_capability_screen_output\\\\\\\",\\\\\\\"actions_capability_audio_output\\\\\\\",\\\\\\\"google_assistant_input_type_voice\\\\\\\",\\\\\\\"__system_counters__\\\\\\\"]\\\"\\n      },\\n      \\\"inputs\\\": [{\\n        \\\"intent\\\": \\\"actions.intent.TEXT\\\",\\n        \\\"rawInputs\\\": [{\\n          \\\"inputType\\\": \\\"VOICE\\\",\\n          \\\"query\\\": \\\"1999\\\"\\n        }],\\n        \\\"arguments\\\": [{\\n          \\\"name\\\": \\\"text\\\",\\n          \\\"rawText\\\": \\\"1999\\\",\\n          \\\"textValue\\\": \\\"1999\\\"\\n        }]\\n      }],\\n      \\\"surface\\\": {\\n        \\\"capabilities\\\": [{\\n          \\\"name\\\": \\\"actions.capability.ACCOUNT_LINKING\\\"\\n        }, {\\n          \\\"name\\\": \\\"actions.capability.MEDIA_RESPONSE_AUDIO\\\"\\n        }, {\\n          \\\"name\\\": \\\"actions.capability.SCREEN_OUTPUT\\\"\\n        }, {\\n          \\\"name\\\": \\\"actions.capability.AUDIO_OUTPUT\\\"\\n        }]\\n      },\\n      \\\"isInSandbox\\\": true,\\n      \\\"availableSurfaces\\\": [{\\n        \\\"capabilities\\\": [{\\n          \\\"name\\\": \\\"actions.capability.AUDIO_OUTPUT\\\"\\n        }, {\\n          \\\"name\\\": \\\"actions.capability.SCREEN_OUTPUT\\\"\\n        }, {\\n          \\\"name\\\": \\\"actions.capability.WEB_BROWSER\\\"\\n        }]\\n      }],\\n      \\\"requestType\\\": \\\"SIMULATOR\\\"\\n    },\\n    \\\"source\\\": \\\"google\\\",\\n    \\\"version\\\": \\\"2\\\"\\n  }\\n}\"\n    }\n  }\n}.",
+    "insertId": "1f1xffpgcuj5b2i",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "action_id": "actions.intent.TEXT",
+        "version_id": "",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T16:41:39.516077645Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s",
+    "receiveTimestamp": "2020-09-30T16:41:39.526572144Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-US\",\"lastSeen\":\"2020-09-30T16:41:32Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s\",\"type\":\"ACTIVE\",\"conversationToken\":\"[\\\"83e70dc9-a1f8-4bb1-8afe-16a312c1b2e8_id_dialog_context\\\",\\\"play_song_dialog_context\\\",\\\"play_song_dialog_params_lms_song\\\",\\\"actions_capability_account_linking\\\",\\\"actions_capability_media_response_audio\\\",\\\"actions_capability_screen_output\\\",\\\"actions_capability_audio_output\\\",\\\"google_assistant_input_type_voice\\\",\\\"__system_counters__\\\"]\"},\"inputs\":[{\"intent\":\"actions.intent.TEXT\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"1999\"}],\"arguments\":[{\"name\":\"text\",\"rawText\":\"1999\",\"textValue\":\"1999\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "1f1xffpgcuj5b2h",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "action_id": "actions.intent.TEXT",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T16:41:38.458916393Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "source": "AOG_REQUEST_RESPONSE",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s",
+    "receiveTimestamp": "2020-09-30T16:41:39.526572144Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:41:32 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-7zvjIyYrdgJgcJhCEORkFw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=nKypGCe1fOZ_sw3H0DoOpSQxRPOUSCKaWIuuRukL2ZWFp8DIqhTKXPZEi8LPUppT1UXaNmiha3Nw8Fck5TEG9b2hxD2M9GGox9veGSMTPLocOztLYCVQam5QaQ80TYabSKMFXySPyi8PVe1DAi4G4-g58RctuLzNWEQtlGs0mGE; expires=Thu, 01-Apr-2021 16:41:32 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[\\\"83e70dc9-a1f8-4bb1-8afe-16a312c1b2e8_id_dialog_context\\\",\\\"play_song_dialog_context\\\",\\\"play_song_dialog_params_lms_song\\\",\\\"actions_capability_account_linking\\\",\\\"actions_capability_media_response_audio\\\",\\\"actions_capability_screen_output\\\",\\\"actions_capability_audio_output\\\",\\\"google_assistant_input_type_voice\\\",\\\"__system_counters__\\\"]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Which song?\",\n            \"displayText\": \"Which song?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"message\": \"Success (200)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"83e70dc9-a1f8-4bb1-8afe-16a312c1b2e8\",\n      \"parameterNames\": [\"lms_player\"]\n    }\n  }\n}.",
+    "insertId": "1gq88gpg5w581pz",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "version_id": "",
+        "action_id": "actions.intent.TEXT"
+      }
+    },
+    "timestamp": "2020-09-30T16:41:32.391127188Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "source": "AOG_REQUEST_RESPONSE",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s",
+    "receiveTimestamp": "2020-09-30T16:41:32.401222158Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-US\",\"lastSeen\":\"2020-09-30T16:41:26Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s\",\"type\":\"ACTIVE\",\"conversationToken\":\"[]\"},\"inputs\":[{\"intent\":\"actions.intent.TEXT\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"Play song 1999 using player garage\"}],\"arguments\":[{\"name\":\"text\",\"rawText\":\"Play song 1999 using player garage\",\"textValue\":\"Play song 1999 using player garage\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "1gq88gpg5w581py",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "action_id": "actions.intent.TEXT",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T16:41:32.202530712Z",
+    "severity": "DEBUG",
+    "labels": {
+      "source": "AOG_REQUEST_RESPONSE",
+      "channel": "preview",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s",
+    "receiveTimestamp": "2020-09-30T16:41:32.401222158Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:41:26 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-/O4r92RYzA+EC099uCbzhQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=D9oIO-ym60HcclZwbw8t4--_bZQLMCYNG85W3Cv3HeXgb19zc0irrbYs-aStJ2-1B8SYfanxe11KC5c-9gnvWph9NR7OHdPBPH3KR1Bp0Nlsv98vbzSYbQ4Z33BpMflARyVblkvSJab7_D1ld6epoTfwYVPn2km_JoWe96mozQA; expires=Thu, 01-Apr-2021 16:41:26 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Hi! How can I help?\",\n            \"displayText\": \"Hi! How can I help?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"message\": \"Success (200)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"2b4829b3-56e9-41fa-af74-52d1b84fdef6\"\n    }\n  }\n}.",
+    "insertId": "1fca8jzg5zys5c7",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.MAIN",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:41:26.875620590Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s",
+    "receiveTimestamp": "2020-09-30T16:41:26.885000052Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-US\",\"lastSeen\":\"2020-09-30T16:39:30Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s\",\"type\":\"NEW\"},\"inputs\":[{\"intent\":\"actions.intent.MAIN\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"Talk to extra maths revision\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "1fca8jzg5zys5c6",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.MAIN",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:41:26.180350371Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHHi_PkxhoB6r3uInrakM2o1jzkZ1H8D54laAInzimNWW1fwnbsEDQl8j6uT6pEXH70_VNHPu-s",
+    "receiveTimestamp": "2020-09-30T16:41:26.885000052Z"
+  },
+  {
+    "textPayload": "MalformedResponse: Webhook error (206)",
+    "insertId": "148l533gc5ib817",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.TEXT",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:39:30.775483329Z",
+    "severity": "ERROR",
+    "labels": {
+      "source": "JSON_RESPONSE_VALIDATION",
+      "querystream": "GOOGLE_USER",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM",
+    "receiveTimestamp": "2020-09-30T16:39:30.785740862Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:39:30 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-ljmKbT7X+CVYIaDH+zstzQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=bKQBmM4tphMBZPIKia95Fea3MYwPpVKWHdlR_BNk5qe57jFiStifX38MFWU6rIPAZTQyr2lJhBfQasbe4EShdeSjF_kXmVYZx5b4r8jaeCxqlAzbswzwm7Yi49ukKcqjKvmaj5BcFDAgi8c9GeQpEKWiF33baTnB2TQpBecyc_Q; expires=Thu, 01-Apr-2021 16:39:30 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[\\\"play_artist-followup\\\"]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Playing artist prince using the current player.  Would you like me to follow up?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }, {\n      \"intent\": \"ad09f859-c873-4393-b22b-d61f47ad67a9\"\n    }, {\n      \"intent\": \"d93cf150-9099-4210-bd2f-c3747d93a975\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"code\": 14,\n      \"message\": \"Webhook error (206)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"774ce9df-ff37-48c7-b6b5-a9c117dab740\",\n      \"parameterNames\": [\"lms_artist\"]\n    },\n    \"delegatedRequest\": {\n      \"delegatedRequest\": \"{\\n  \\\"id\\\": \\\"8b06775b-68be-4f0d-bb18-fd4c718fddf3-77b242db\\\",\\n  \\\"lang\\\": \\\"en\\\",\\n  \\\"sessionId\\\": \\\"ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM\\\",\\n  \\\"timestamp\\\": \\\"2020-09-30T16:39:30.303Z\\\",\\n  \\\"result\\\": {\\n    \\\"source\\\": \\\"agent\\\",\\n    \\\"resolvedQuery\\\": \\\"prince\\\",\\n    \\\"action\\\": \\\"lms_dialog_intent\\\",\\n    \\\"actionIncomplete\\\": false,\\n    \\\"score\\\": 1.0,\\n    \\\"parameters\\\": {\\n      \\\"lms_command\\\": \\\"play artist\\\",\\n      \\\"lms_artist\\\": \\\"prince\\\",\\n      \\\"lms_player\\\": \\\"\\\",\\n      \\\"lms_shuffle\\\": \\\"\\\"\\n    },\\n    \\\"contexts\\\": [{\\n      \\\"name\\\": \\\"play_artist-followup\\\",\\n      \\\"lifespan\\\": 2,\\n      \\\"parameters\\\": {\\n        \\\"lms_command\\\": \\\"play artist\\\",\\n        \\\"lms_artist\\\": \\\"prince\\\",\\n        \\\"lms_artist.original\\\": \\\"prince\\\",\\n        \\\"lms_player\\\": \\\"\\\",\\n        \\\"lms_player.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"actions_capability_account_linking\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"lms_command\\\": \\\"play artist\\\",\\n        \\\"lms_artist\\\": \\\"prince\\\",\\n        \\\"lms_artist.original\\\": \\\"prince\\\",\\n        \\\"lms_player\\\": \\\"\\\",\\n        \\\"lms_player.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"actions_capability_audio_output\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"lms_command\\\": \\\"play artist\\\",\\n        \\\"lms_artist\\\": \\\"prince\\\",\\n        \\\"lms_artist.original\\\": \\\"prince\\\",\\n        \\\"lms_player\\\": \\\"\\\",\\n        \\\"lms_player.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"actions_capability_screen_output\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"lms_command\\\": \\\"play artist\\\",\\n        \\\"lms_artist\\\": \\\"prince\\\",\\n        \\\"lms_artist.original\\\": \\\"prince\\\",\\n        \\\"lms_player\\\": \\\"\\\",\\n        \\\"lms_player.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"actions_capability_media_response_audio\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"lms_command\\\": \\\"play artist\\\",\\n        \\\"lms_artist\\\": \\\"prince\\\",\\n        \\\"lms_artist.original\\\": \\\"prince\\\",\\n        \\\"lms_player\\\": \\\"\\\",\\n        \\\"lms_player.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"google_assistant_input_type_voice\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"lms_command\\\": \\\"play artist\\\",\\n        \\\"lms_artist\\\": \\\"prince\\\",\\n        \\\"lms_artist.original\\\": \\\"prince\\\",\\n        \\\"lms_player\\\": \\\"\\\",\\n        \\\"lms_player.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }, {\\n      \\\"name\\\": \\\"__system_counters__\\\",\\n      \\\"lifespan\\\": 0,\\n      \\\"parameters\\\": {\\n        \\\"no-input\\\": 0.0,\\n        \\\"no-match\\\": 0.0,\\n        \\\"lms_command\\\": \\\"play artist\\\",\\n        \\\"lms_artist\\\": \\\"prince\\\",\\n        \\\"lms_artist.original\\\": \\\"prince\\\",\\n        \\\"lms_player\\\": \\\"\\\",\\n        \\\"lms_player.original\\\": \\\"\\\",\\n        \\\"lms_shuffle\\\": \\\"\\\",\\n        \\\"lms_shuffle.original\\\": \\\"\\\",\\n        \\\"lms_command.original\\\": \\\"\\\"\\n      }\\n    }],\\n    \\\"metadata\\\": {\\n      \\\"intentId\\\": \\\"774ce9df-ff37-48c7-b6b5-a9c117dab740\\\",\\n      \\\"intentName\\\": \\\"play_artist\\\",\\n      \\\"webhookUsed\\\": \\\"true\\\",\\n      \\\"webhookForSlotFillingUsed\\\": \\\"false\\\",\\n      \\\"isFallbackIntent\\\": \\\"false\\\"\\n    },\\n    \\\"fulfillment\\\": {\\n      \\\"speech\\\": \\\"Playing artist prince using the current player.  Would you like me to follow up?\\\",\\n      \\\"messages\\\": [{\\n        \\\"platform\\\": \\\"google\\\",\\n        \\\"textToSpeech\\\": \\\"Playing artist prince using the current player.  Would you like me to follow up?\\\",\\n        \\\"lang\\\": \\\"en\\\",\\n        \\\"type\\\": \\\"simple_response\\\"\\n      }, {\\n        \\\"lang\\\": \\\"en\\\",\\n        \\\"type\\\": 0.0,\\n        \\\"speech\\\": \\\"Playing artist prince using the current player.  Would you like me to follow up?\\\"\\n      }]\\n    }\\n  },\\n  \\\"status\\\": {\\n    \\\"code\\\": 200,\\n    \\\"errorType\\\": \\\"success\\\"\\n  },\\n  \\\"originalRequest\\\": {\\n    \\\"data\\\": {\\n      \\\"user\\\": {\\n        \\\"locale\\\": \\\"en-US\\\",\\n        \\\"lastSeen\\\": \\\"2020-09-30T16:39:23Z\\\",\\n        \\\"userVerificationStatus\\\": \\\"VERIFIED\\\"\\n      },\\n      \\\"conversation\\\": {\\n        \\\"conversationId\\\": \\\"ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM\\\",\\n        \\\"type\\\": \\\"ACTIVE\\\",\\n        \\\"conversationToken\\\": \\\"[\\\\\\\"774ce9df-ff37-48c7-b6b5-a9c117dab740_id_dialog_context\\\\\\\",\\\\\\\"play_artist_dialog_context\\\\\\\",\\\\\\\"play_artist_dialog_params_lms_artist\\\\\\\",\\\\\\\"actions_capability_account_linking\\\\\\\",\\\\\\\"actions_capability_screen_output\\\\\\\",\\\\\\\"actions_capability_audio_output\\\\\\\",\\\\\\\"actions_capability_media_response_audio\\\\\\\",\\\\\\\"google_assistant_input_type_voice\\\\\\\",\\\\\\\"__system_counters__\\\\\\\"]\\\"\\n      },\\n      \\\"inputs\\\": [{\\n        \\\"intent\\\": \\\"actions.intent.TEXT\\\",\\n        \\\"rawInputs\\\": [{\\n          \\\"inputType\\\": \\\"VOICE\\\",\\n          \\\"query\\\": \\\"prince\\\"\\n        }],\\n        \\\"arguments\\\": [{\\n          \\\"name\\\": \\\"text\\\",\\n          \\\"rawText\\\": \\\"prince\\\",\\n          \\\"textValue\\\": \\\"prince\\\"\\n        }]\\n      }],\\n      \\\"surface\\\": {\\n        \\\"capabilities\\\": [{\\n          \\\"name\\\": \\\"actions.capability.ACCOUNT_LINKING\\\"\\n        }, {\\n          \\\"name\\\": \\\"actions.capability.AUDIO_OUTPUT\\\"\\n        }, {\\n          \\\"name\\\": \\\"actions.capability.SCREEN_OUTPUT\\\"\\n        }, {\\n          \\\"name\\\": \\\"actions.capability.MEDIA_RESPONSE_AUDIO\\\"\\n        }]\\n      },\\n      \\\"isInSandbox\\\": true,\\n      \\\"availableSurfaces\\\": [{\\n        \\\"capabilities\\\": [{\\n          \\\"name\\\": \\\"actions.capability.WEB_BROWSER\\\"\\n        }, {\\n          \\\"name\\\": \\\"actions.capability.AUDIO_OUTPUT\\\"\\n        }, {\\n          \\\"name\\\": \\\"actions.capability.SCREEN_OUTPUT\\\"\\n        }]\\n      }],\\n      \\\"requestType\\\": \\\"SIMULATOR\\\"\\n    },\\n    \\\"source\\\": \\\"google\\\",\\n    \\\"version\\\": \\\"2\\\"\\n  }\\n}\"\n    }\n  }\n}.",
+    "insertId": "xv62atfq6pqzz",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "version_id": "",
+        "action_id": "actions.intent.TEXT"
+      }
+    },
+    "timestamp": "2020-09-30T16:39:30.775021704Z",
+    "severity": "DEBUG",
+    "labels": {
+      "source": "AOG_REQUEST_RESPONSE",
+      "channel": "preview",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM",
+    "receiveTimestamp": "2020-09-30T16:39:30.785067095Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-US\",\"lastSeen\":\"2020-09-30T16:39:23Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM\",\"type\":\"ACTIVE\",\"conversationToken\":\"[\\\"774ce9df-ff37-48c7-b6b5-a9c117dab740_id_dialog_context\\\",\\\"play_artist_dialog_context\\\",\\\"play_artist_dialog_params_lms_artist\\\",\\\"actions_capability_account_linking\\\",\\\"actions_capability_screen_output\\\",\\\"actions_capability_audio_output\\\",\\\"actions_capability_media_response_audio\\\",\\\"google_assistant_input_type_voice\\\",\\\"__system_counters__\\\"]\"},\"inputs\":[{\"intent\":\"actions.intent.TEXT\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"prince\"}],\"arguments\":[{\"name\":\"text\",\"rawText\":\"prince\",\"textValue\":\"prince\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.WEB_BROWSER\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "xv62atfq6pqzy",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "action_id": "actions.intent.TEXT",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T16:39:29.691930612Z",
+    "severity": "DEBUG",
+    "labels": {
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM",
+    "receiveTimestamp": "2020-09-30T16:39:30.785067095Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:39:23 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-UZxxyGXJK0l6TeyvZM6VNg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=yPlSWbat0NdQvi9O46BOpKFCDFGLZpVUeQtwSXY_9aaebUbuW9oqSYfahtxL3OQWdUFc4lu4IBuXS0jqdtC7Cy1gHlOySK_yoRbn3imm8jpZKw2iTVNKLDM6Wa0nND6hdHivgoeZUMjm2ri8TgHhA1IkkUltIl8Cr_cI8webFjk; expires=Thu, 01-Apr-2021 16:39:23 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[\\\"774ce9df-ff37-48c7-b6b5-a9c117dab740_id_dialog_context\\\",\\\"play_artist_dialog_context\\\",\\\"play_artist_dialog_params_lms_artist\\\",\\\"actions_capability_account_linking\\\",\\\"actions_capability_screen_output\\\",\\\"actions_capability_audio_output\\\",\\\"actions_capability_media_response_audio\\\",\\\"google_assistant_input_type_voice\\\",\\\"__system_counters__\\\"]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Which artist?\",\n            \"displayText\": \"Which artist?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"message\": \"Success (200)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"774ce9df-ff37-48c7-b6b5-a9c117dab740\"\n    }\n  }\n}.",
+    "insertId": "m7p7hxg8fxs8ko",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "action_id": "actions.intent.TEXT",
+        "version_id": "",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T16:39:23.320700074Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "source": "AOG_REQUEST_RESPONSE",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM",
+    "receiveTimestamp": "2020-09-30T16:39:23.329905518Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-US\",\"lastSeen\":\"2020-09-30T16:39:14Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM\",\"type\":\"ACTIVE\",\"conversationToken\":\"[]\"},\"inputs\":[{\"intent\":\"actions.intent.TEXT\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"play 1999\"}],\"arguments\":[{\"name\":\"text\",\"rawText\":\"play 1999\",\"textValue\":\"play 1999\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "m7p7hxg8fxs8kn",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "action_id": "actions.intent.TEXT",
+        "project_id": "extra-maths",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:39:22.619723425Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM",
+    "receiveTimestamp": "2020-09-30T16:39:23.329905518Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:39:14 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-KUvAd+AFUgeJ+6KHfMeZcQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=ineeKlTDWeY2iDlKXhy4p9bSw_jbq1DJMxXXRbUhS2oNuqIpfBfSnlfB58q4UaFB_ws-PuijFc-zavYcEv1CfjnkB3umnM04iviyLA7Y31YJLFTU5n671yNY7w0infDeuQhB3bLtycDufipe1rNnGjXbKMNw6lOQJ497DeHKkb8; expires=Thu, 01-Apr-2021 16:39:14 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Good day! What can I do for you?\",\n            \"displayText\": \"Good day! What can I do for you?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"message\": \"Success (200)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"2b4829b3-56e9-41fa-af74-52d1b84fdef6\"\n    }\n  }\n}.",
+    "insertId": "1jhwvb2gaxssjql",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "version_id": "",
+        "action_id": "actions.intent.MAIN"
+      }
+    },
+    "timestamp": "2020-09-30T16:39:14.140454258Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM",
+    "receiveTimestamp": "2020-09-30T16:39:14.149202432Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-US\",\"lastSeen\":\"2020-09-30T16:39:00Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM\",\"type\":\"NEW\"},\"inputs\":[{\"intent\":\"actions.intent.MAIN\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"Talk to extra maths revision\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "1jhwvb2gaxssjqk",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "version_id": "",
+        "action_id": "actions.intent.MAIN"
+      }
+    },
+    "timestamp": "2020-09-30T16:39:13.467829706Z",
+    "severity": "DEBUG",
+    "labels": {
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFZGKZu0A39HKHX2ErBlJs2P12ytJkvRfdbe0i8Y5JZ_Axqx2lFnu3jKaGqEo1UvjCR6_ukaaM",
+    "receiveTimestamp": "2020-09-30T16:39:14.149202432Z"
+  },
+  {
+    "textPayload": "MalformedResponse: Webhook error (206)",
+    "insertId": "1bqjjihfrbwe7i",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "version_id": "",
+        "action_id": "actions.intent.TEXT"
+      }
+    },
+    "timestamp": "2020-09-30T16:39:00.243551436Z",
+    "severity": "ERROR",
+    "labels": {
+      "source": "JSON_RESPONSE_VALIDATION",
+      "channel": "preview",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFeLcbOqsDkgV1QfKu6-GfpAv4wvFdE9xXnm1P37_tdLaMAOogm9F-M4Z6FDoxCwbKwgyc00xM",
+    "receiveTimestamp": "2020-09-30T16:39:00.254166105Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:39:00 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-UBUTHFI1KJRG+b0gKyHB6A' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=lAbXO_dxXu5J46boYardH9kIVXtqMdzUx8UQQB3edYsekffspe2esSiWs_g1NCXsfdZbGx3jj8JxZc52aH23oD7_JWSeS_FIheCqODwFyd_9LODAHOil4fssIhJpy19AhDAufT3kqbQRNZAaW1RWKyBmKuS7-W0RFpKge9HtatE; expires=Thu, 01-Apr-2021 16:38:59 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[\\\"play_artist-followup\\\"]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Playing artist prince using the current player.  Would you like me to follow up?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }, {\n      \"intent\": \"ad09f859-c873-4393-b22b-d61f47ad67a9\"\n    }, {\n      \"intent\": \"d93cf150-9099-4210-bd2f-c3747d93a975\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"code\": 14,\n      \"message\": \"Webhook error (206)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"774ce9df-ff37-48c7-b6b5-a9c117dab740\",\n      \"parameterNames\": [\"lms_artist\"]\n    }\n  }\n}.",
+    "insertId": "14iwvg7frcx623",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "version_id": "",
+        "action_id": "actions.intent.TEXT"
+      }
+    },
+    "timestamp": "2020-09-30T16:39:00.243072213Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFeLcbOqsDkgV1QfKu6-GfpAv4wvFdE9xXnm1P37_tdLaMAOogm9F-M4Z6FDoxCwbKwgyc00xM",
+    "receiveTimestamp": "2020-09-30T16:39:00.255427699Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-GB\",\"lastSeen\":\"2020-09-30T16:38:48Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHFeLcbOqsDkgV1QfKu6-GfpAv4wvFdE9xXnm1P37_tdLaMAOogm9F-M4Z6FDoxCwbKwgyc00xM\",\"type\":\"ACTIVE\",\"conversationToken\":\"[\\\"774ce9df-ff37-48c7-b6b5-a9c117dab740_id_dialog_context\\\",\\\"play_artist_dialog_context\\\",\\\"play_artist_dialog_params_lms_artist\\\",\\\"actions_capability_account_linking\\\",\\\"actions_capability_media_response_audio\\\",\\\"actions_capability_web_browser\\\",\\\"actions_capability_audio_output\\\",\\\"actions_capability_screen_output\\\",\\\"google_assistant_input_type_voice\\\",\\\"google_assistant_welcome\\\",\\\"__system_counters__\\\"]\"},\"inputs\":[{\"intent\":\"actions.intent.TEXT\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"prince\"}],\"arguments\":[{\"name\":\"text\",\"rawText\":\"prince\",\"textValue\":\"prince\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]}]}.",
+    "insertId": "14iwvg7frcx622",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "action_id": "actions.intent.TEXT",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T16:38:59.141609992Z",
+    "severity": "DEBUG",
+    "labels": {
+      "source": "AOG_REQUEST_RESPONSE",
+      "channel": "preview",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFeLcbOqsDkgV1QfKu6-GfpAv4wvFdE9xXnm1P37_tdLaMAOogm9F-M4Z6FDoxCwbKwgyc00xM",
+    "receiveTimestamp": "2020-09-30T16:39:00.255427699Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:38:48 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-P+UEPvPuKsUAJ4Wl0mUIDQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=yTlukYpjPZEvVamywmVQLmxDsZfzcp_ZVfR53S5J6GSImY8eFPNb4NJqBQqeTjkHZnKl7iwzt35vzkHBstGwejWsNckMYY3O2Y7Dhy5VhTIQ1Mvh_8D7vrrhTfOA8-G-dAW0j5v71mHNTFfdI_1fkY2x6mdjpfkdsXRZld5obhg; expires=Thu, 01-Apr-2021 16:38:48 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[\\\"774ce9df-ff37-48c7-b6b5-a9c117dab740_id_dialog_context\\\",\\\"play_artist_dialog_context\\\",\\\"play_artist_dialog_params_lms_artist\\\",\\\"actions_capability_account_linking\\\",\\\"actions_capability_media_response_audio\\\",\\\"actions_capability_web_browser\\\",\\\"actions_capability_audio_output\\\",\\\"actions_capability_screen_output\\\",\\\"google_assistant_input_type_voice\\\",\\\"google_assistant_welcome\\\",\\\"__system_counters__\\\"]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Which artist?\",\n            \"displayText\": \"Which artist?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"message\": \"Success (200)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"774ce9df-ff37-48c7-b6b5-a9c117dab740\"\n    }\n  }\n}.",
+    "insertId": "1ei4q2tg5zwdxfo",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "action_id": "actions.intent.MAIN",
+        "project_id": "extra-maths",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:38:48.291898616Z",
+    "severity": "DEBUG",
+    "labels": {
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFeLcbOqsDkgV1QfKu6-GfpAv4wvFdE9xXnm1P37_tdLaMAOogm9F-M4Z6FDoxCwbKwgyc00xM",
+    "receiveTimestamp": "2020-09-30T16:38:48.300760110Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-GB\",\"lastSeen\":\"2020-09-30T16:38:15Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHFeLcbOqsDkgV1QfKu6-GfpAv4wvFdE9xXnm1P37_tdLaMAOogm9F-M4Z6FDoxCwbKwgyc00xM\",\"type\":\"NEW\"},\"inputs\":[{\"intent\":\"actions.intent.MAIN\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"ask extra maths revision to play 1999\"}],\"arguments\":[{\"name\":\"trigger_query\",\"rawText\":\"play 1999\",\"textValue\":\"play 1999\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"},{\"name\":\"actions.capability.WEB_BROWSER\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]}]}.",
+    "insertId": "1ei4q2tg5zwdxfn",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.MAIN",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:38:48.074226633Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "source": "AOG_REQUEST_RESPONSE",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFeLcbOqsDkgV1QfKu6-GfpAv4wvFdE9xXnm1P37_tdLaMAOogm9F-M4Z6FDoxCwbKwgyc00xM",
+    "receiveTimestamp": "2020-09-30T16:38:48.300760110Z"
+  },
+  {
+    "textPayload": "MalformedResponse: Webhook error (206)",
+    "insertId": "1fcezrwg9xyfzzo",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "action_id": "actions.intent.TEXT",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T16:38:15.461025199Z",
+    "severity": "ERROR",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "source": "JSON_RESPONSE_VALIDATION",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHE6parh0Ikb3Z0INxNUUd8MCmpkBtDJgOto_P-8jOWRwfxxJdQmfljuX07E_5lzU_t9KvJ4XP4",
+    "receiveTimestamp": "2020-09-30T16:38:15.472836291Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:38:15 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-Eqizw9nqoS16u8CIvq2lKA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=YSIDEmLyNfTyaYEsGNndFzn_ZZTKQ4kKM05qIUg8BO0jv2IAkrSBD-vKlmZn9IjjuU9OamVuWLNVTfmFXeiOd-2CXztYfM7EJNRXST3fP_umMwegVTDlHOZVvJVr8skFzGLD2OHgGTKQ2-vZE9Tm6rJoxCzC3j4TOEUFqg5yEOk; expires=Thu, 01-Apr-2021 16:38:14 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Setting music source to lms\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"code\": 14,\n      \"message\": \"Webhook error (206)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"388a5915-1a0b-4aa9-8358-c3629177ec4c\",\n      \"parameterNames\": [\"lms_source\"]\n    }\n  }\n}.",
+    "insertId": "kje9f1g60q9v8j",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.TEXT",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:38:15.460686994Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "querystream": "GOOGLE_USER",
+      "source": "AOG_REQUEST_RESPONSE"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHE6parh0Ikb3Z0INxNUUd8MCmpkBtDJgOto_P-8jOWRwfxxJdQmfljuX07E_5lzU_t9KvJ4XP4",
+    "receiveTimestamp": "2020-09-30T16:38:15.473134126Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-GB\",\"lastSeen\":\"2020-09-30T16:37:18Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHE6parh0Ikb3Z0INxNUUd8MCmpkBtDJgOto_P-8jOWRwfxxJdQmfljuX07E_5lzU_t9KvJ4XP4\",\"type\":\"ACTIVE\",\"conversationToken\":\"[]\"},\"inputs\":[{\"intent\":\"actions.intent.TEXT\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"set music source to local\"}],\"arguments\":[{\"name\":\"text\",\"rawText\":\"set music source to local\",\"textValue\":\"set music source to local\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]}]}.",
+    "insertId": "kje9f1g60q9v8i",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "version_id": "",
+        "action_id": "actions.intent.TEXT"
+      }
+    },
+    "timestamp": "2020-09-30T16:38:14.321825991Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHE6parh0Ikb3Z0INxNUUd8MCmpkBtDJgOto_P-8jOWRwfxxJdQmfljuX07E_5lzU_t9KvJ4XP4",
+    "receiveTimestamp": "2020-09-30T16:38:15.473134126Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:37:18 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-v0Uxd1PY/U8fi6iJ+GMWKA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=e0V4MkDzxaZKHopT-l7edvR1Q57t_FKQ5Dz2c03TNtc1ri7Oh22ewX-vtD50ZwiEabtThEgelLVpL5ZrSwdsKedKE0QaILeuNEekVugbFrBlGOi7LYKKoIcAg6zYyvqi2BmITi0PlRhY4fp0z4MbPzgQt6ImE1F4kDb5cMNE_Ss; expires=Thu, 01-Apr-2021 16:37:18 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"You are using LMS Controls app.  My current command list is: play song, album, artist, playlist or radio station.  You can also be more specific by saying something like:  Play song smoke on the water by Deep Purple.  All commands can also include:  in the media player name to quickly set the destination.  Media players can be paused or re-started by saying:  pause or re-start followed by the player name.  The set commands include:  set volume followed by 0 to 100,  or set shuffle on or off, set repeat on or off, set sleep timer to number of minutes, set player to the player name or set music source to spotify or local.  To exit the app, simply say goodbye or cancel.  If you want to hear sample commands say: sample commands.  Now how can I help?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"message\": \"Success (200)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"00565d26-1fa8-4fb0-9ff2-dfe752530e56\"\n    }\n  }\n}.",
+    "insertId": "1k1ql7lg5zx0s1d",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "action_id": "actions.intent.TEXT",
+        "project_id": "extra-maths",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:37:18.885092230Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHE6parh0Ikb3Z0INxNUUd8MCmpkBtDJgOto_P-8jOWRwfxxJdQmfljuX07E_5lzU_t9KvJ4XP4",
+    "receiveTimestamp": "2020-09-30T16:37:18.895358500Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-GB\",\"lastSeen\":\"2020-09-30T16:37:05Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHE6parh0Ikb3Z0INxNUUd8MCmpkBtDJgOto_P-8jOWRwfxxJdQmfljuX07E_5lzU_t9KvJ4XP4\",\"type\":\"ACTIVE\",\"conversationToken\":\"[]\"},\"inputs\":[{\"intent\":\"actions.intent.TEXT\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"help\"}],\"arguments\":[{\"name\":\"text\",\"rawText\":\"help\",\"textValue\":\"help\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.WEB_BROWSER\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"}]}]}.",
+    "insertId": "1k1ql7lg5zx0s1c",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.TEXT",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:37:18.209802319Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHE6parh0Ikb3Z0INxNUUd8MCmpkBtDJgOto_P-8jOWRwfxxJdQmfljuX07E_5lzU_t9KvJ4XP4",
+    "receiveTimestamp": "2020-09-30T16:37:18.895358500Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:37:05 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-cT2TBxg0DUxkRsuk7/Uiqg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=wyKfsg-ULcdwGjpTlRZke993XIvrQIe_2WLicfGZHYpH7MxeRUf9mZnnZdwlayTI3jlQDbrN_B5XkrQm-klxhcs5q_Wl6_4iO3Rv1d547u8sdoZLyPkbZw1Nod2kerkZ_UyUSKrlBDp1o5ts0HwNTyOmC3vuHEZiwmovdvhybdQ; expires=Thu, 01-Apr-2021 16:37:05 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Hi! How can I help?\",\n            \"displayText\": \"Hi! How can I help?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"message\": \"Success (200)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"2b4829b3-56e9-41fa-af74-52d1b84fdef6\"\n    }\n  }\n}.",
+    "insertId": "170nm7fgcnj0p77",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "action_id": "actions.intent.MAIN",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T16:37:05.800603828Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "source": "AOG_REQUEST_RESPONSE",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHE6parh0Ikb3Z0INxNUUd8MCmpkBtDJgOto_P-8jOWRwfxxJdQmfljuX07E_5lzU_t9KvJ4XP4",
+    "receiveTimestamp": "2020-09-30T16:37:05.812446331Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-GB\",\"lastSeen\":\"2020-09-30T16:36:46Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHE6parh0Ikb3Z0INxNUUd8MCmpkBtDJgOto_P-8jOWRwfxxJdQmfljuX07E_5lzU_t9KvJ4XP4\",\"type\":\"NEW\"},\"inputs\":[{\"intent\":\"actions.intent.MAIN\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"talk to extra maths revision\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.WEB_BROWSER\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]}]}.",
+    "insertId": "170nm7fgcnj0p76",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "action_id": "actions.intent.MAIN",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T16:37:05.137257518Z",
+    "severity": "DEBUG",
+    "labels": {
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHE6parh0Ikb3Z0INxNUUd8MCmpkBtDJgOto_P-8jOWRwfxxJdQmfljuX07E_5lzU_t9KvJ4XP4",
+    "receiveTimestamp": "2020-09-30T16:37:05.812446331Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:36:45 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-Aa5TGtFQ0Or+lsXcISYXpA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=oYSOJSguJZwM2NsVwZ74B4fZ7zaUE61RB1qDv8bzVU-LEEerRR-OG02dzsLmeH6lHqzyzZTjQ_GWiK9CX8rv5kA_aOV5K7B-Ksz5vfvHTp_d9o7NLOvUMo4HAbnHuwU4oPfz71inz5Nk5IPLmBEgpJOW2fawaWsJWVM0RmSsqCc; expires=Thu, 01-Apr-2021 16:36:45 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[]\",\n  \"finalResponse\": {\n    \"richResponse\": {\n      \"items\": [{\n        \"simpleResponse\": {\n          \"textToSpeech\": \"returning control to google, goodbye\"\n        }\n      }]\n    }\n  },\n  \"responseMetadata\": {\n    \"status\": {\n      \"message\": \"Success (200)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"a67bcea3-bc2e-4143-9dc5-14f2b7f57e14\"\n    }\n  }\n}.",
+    "insertId": "17uhd1ig5y9snq6",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.CANCEL"
+      }
+    },
+    "timestamp": "2020-09-30T16:36:46.005038186Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "querystream": "GOOGLE_USER",
+      "source": "AOG_REQUEST_RESPONSE"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHE6VufBUMdZSTY120Od1squLcD1I2jUSVo8w8sA8p7pIMh5S8D-jT9aR1yg0DyB3GcwXVS7vQk",
+    "receiveTimestamp": "2020-09-30T16:36:46.012417290Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-US\",\"lastSeen\":\"2020-09-30T16:36:39Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHE6VufBUMdZSTY120Od1squLcD1I2jUSVo8w8sA8p7pIMh5S8D-jT9aR1yg0DyB3GcwXVS7vQk\",\"type\":\"ACTIVE\",\"conversationToken\":\"[]\"},\"inputs\":[{\"intent\":\"actions.intent.CANCEL\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"cancel\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "17uhd1ig5y9snq5",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "action_id": "actions.intent.CANCEL",
+        "project_id": "extra-maths",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:36:45.347499053Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHE6VufBUMdZSTY120Od1squLcD1I2jUSVo8w8sA8p7pIMh5S8D-jT9aR1yg0DyB3GcwXVS7vQk",
+    "receiveTimestamp": "2020-09-30T16:36:46.012417290Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:36:39 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-ly6Ac9cbL0xYJwzeVCeNVw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=UAaH8PFzUcljdYkg6333mVSK3mmVRDH9zA3VctRmnOuBcQcIIWZVO-1rfatLw0l7Rc9AyTXuGl0KCwDp4rrjCWTzXa7VRL0gytqCGZ9jO5ylR-kPdrUy4y-pA6r7WSGg1i3pgUzVNA96_5PAkBS03V4Rp-CectVeVkZpYVc5ApM; expires=Thu, 01-Apr-2021 16:36:39 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Greetings! How can I assist?\",\n            \"displayText\": \"Greetings! How can I assist?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"message\": \"Success (200)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"2b4829b3-56e9-41fa-af74-52d1b84fdef6\"\n    }\n  }\n}.",
+    "insertId": "1ck2fnjgcugirl0",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.MAIN"
+      }
+    },
+    "timestamp": "2020-09-30T16:36:39.366231307Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "querystream": "GOOGLE_USER",
+      "source": "AOG_REQUEST_RESPONSE"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHE6VufBUMdZSTY120Od1squLcD1I2jUSVo8w8sA8p7pIMh5S8D-jT9aR1yg0DyB3GcwXVS7vQk",
+    "receiveTimestamp": "2020-09-30T16:36:39.374480209Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-US\",\"lastSeen\":\"2020-09-30T16:14:37Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHE6VufBUMdZSTY120Od1squLcD1I2jUSVo8w8sA8p7pIMh5S8D-jT9aR1yg0DyB3GcwXVS7vQk\",\"type\":\"NEW\"},\"inputs\":[{\"intent\":\"actions.intent.MAIN\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"Talk to extra maths revision\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "1ck2fnjgcugirkz",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.MAIN"
+      }
+    },
+    "timestamp": "2020-09-30T16:36:38.670197723Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHE6VufBUMdZSTY120Od1squLcD1I2jUSVo8w8sA8p7pIMh5S8D-jT9aR1yg0DyB3GcwXVS7vQk",
+    "receiveTimestamp": "2020-09-30T16:36:39.374480209Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nDate: Wed, 30 Sep 2020 16:14:37 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-V2alTU9Ov3IVCCK0UoZj8A' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nContent-Encoding: gzip\r\nServer: ESF\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=qUT4qSpqlvOd5uPpQ-2FG-HOs6rtbHMOOIF4_5Dqo7NLZea3VC9LM06cVMPFsk5P-0z_SRAouZ-ggAEiv2DkaE8_MvTN4GV8JwE85hq5_ItJCIYPgqDgdv3v1_fqeGgR4vc1ezq5Gpo9GW7GCQ1uBn564Hy-HbGW_zRyNy_xZB4; expires=Thu, 01-Apr-2021 16:14:37 GMT; path=/; domain=.google.com; HttpOnly\r\nAlt-Svc: h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"conversationToken\": \"[]\",\n  \"expectUserResponse\": true,\n  \"expectedInputs\": [{\n    \"inputPrompt\": {\n      \"richInitialPrompt\": {\n        \"items\": [{\n          \"simpleResponse\": {\n            \"textToSpeech\": \"Good day! What can I do for you?\",\n            \"displayText\": \"Good day! What can I do for you?\"\n          }\n        }]\n      }\n    },\n    \"possibleIntents\": [{\n      \"intent\": \"assistant.intent.action.TEXT\"\n    }],\n    \"speechBiasingHints\": [\"$mediaplayers\", \"$on-off\", \"$source\"]\n  }],\n  \"responseMetadata\": {\n    \"status\": {\n      \"message\": \"Success (200)\"\n    },\n    \"queryMatchInfo\": {\n      \"queryMatched\": true,\n      \"intent\": \"2b4829b3-56e9-41fa-af74-52d1b84fdef6\"\n    }\n  }\n}.",
+    "insertId": "w733tbf4ao8nn",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "action_id": "actions.intent.MAIN",
+        "version_id": "",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T16:14:37.527493862Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "source": "AOG_REQUEST_RESPONSE",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHHiJhO7OR9GH0Ndi3N8pPTh0p84uRW_qzwKPOLJneAXdgN0-HKNNXOy0LeRXrR_Y9QU-f6UAj0",
+    "receiveTimestamp": "2020-09-30T16:14:37.540017466Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-US\",\"lastSeen\":\"2020-09-30T16:05:13Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHHiJhO7OR9GH0Ndi3N8pPTh0p84uRW_qzwKPOLJneAXdgN0-HKNNXOy0LeRXrR_Y9QU-f6UAj0\",\"type\":\"NEW\"},\"inputs\":[{\"intent\":\"actions.intent.MAIN\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"Talk to extra maths revision\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "w733tbf4ao8nm",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.MAIN"
+      }
+    },
+    "timestamp": "2020-09-30T16:14:36.817601587Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHHiJhO7OR9GH0Ndi3N8pPTh0p84uRW_qzwKPOLJneAXdgN0-HKNNXOy0LeRXrR_Y9QU-f6UAj0",
+    "receiveTimestamp": "2020-09-30T16:14:37.540017466Z"
+  },
+  {
+    "textPayload": "MalformedResponse: Unknown error when looking up agent metadata from access token: 3bde84b9f3a74b3fa1dcfaf20cc93e94",
+    "insertId": "hrlq7dgcksbg1i",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "version_id": "",
+        "action_id": "actions.intent.MAIN"
+      }
+    },
+    "timestamp": "2020-09-30T16:05:13.775722779Z",
+    "severity": "ERROR",
+    "labels": {
+      "channel": "preview",
+      "source": "JSON_RESPONSE_VALIDATION",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFIcygFYdq3Uh5mS6q4C9dRSARs6p_6jov4dtjefRzUaxuMyrCIHh0HXiC8LV3OlWa6nAiWHtc",
+    "receiveTimestamp": "2020-09-30T16:05:13.787036809Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nServer: nginx/1.13.6\r\nDate: Wed, 30 Sep 2020 16:05:13 GMT\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nassistant-interaction-error-code: -1\r\nassistant-interaction-error-message: Dialogflow error response\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-AmU8AwO+c/R6aLFpWbDdWA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Encoding: gzip\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=1AcHgRVwMEbvMGeQzVyzycPBi0X9wkdzm_Q3aU772I1J4_XydQWNbNxLWWMpg9WR6OVczBYj4HLM-Vkh-tz6X8ODFQLZTI2F0XKLuO5sTLJzwaecXDJusDULa2wqokGrKbho0FULVv8oNlKeWtWI3OVF26au-kpxOHin1N0MxXw; expires=Thu, 01-Apr-2021 16:05:13 GMT; path=/; domain=.google.com; HttpOnly\r\nVia: 1.1 google\r\nAlt-Svc: clear\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"responseMetadata\": {\n    \"status\": {\n      \"code\": 16,\n      \"message\": \"Unknown error when looking up agent metadata from access token: 3bde84b9f3a74b3fa1dcfaf20cc93e94\"\n    }\n  }\n}.",
+    "insertId": "1dej1fzg5wmrnts",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "action_id": "actions.intent.MAIN",
+        "project_id": "extra-maths",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:05:13.775519779Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "querystream": "GOOGLE_USER",
+      "source": "AOG_REQUEST_RESPONSE"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFIcygFYdq3Uh5mS6q4C9dRSARs6p_6jov4dtjefRzUaxuMyrCIHh0HXiC8LV3OlWa6nAiWHtc",
+    "receiveTimestamp": "2020-09-30T16:05:13.786860803Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-GB\",\"lastSeen\":\"2020-09-30T15:48:11Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHFIcygFYdq3Uh5mS6q4C9dRSARs6p_6jov4dtjefRzUaxuMyrCIHh0HXiC8LV3OlWa6nAiWHtc\",\"type\":\"NEW\"},\"inputs\":[{\"intent\":\"actions.intent.MAIN\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"Talk to extra maths revision\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.WEB_BROWSER\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "1dej1fzg5wmrntr",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.MAIN",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T16:05:13.612622717Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHFIcygFYdq3Uh5mS6q4C9dRSARs6p_6jov4dtjefRzUaxuMyrCIHh0HXiC8LV3OlWa6nAiWHtc",
+    "receiveTimestamp": "2020-09-30T16:05:13.786860803Z"
+  },
+  {
+    "textPayload": "MalformedResponse: Unknown error when looking up agent metadata from access token: 3bde84b9f3a74b3fa1dcfaf20cc93e94",
+    "insertId": "13ov1f2gc4zjjxz",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "version_id": "",
+        "action_id": "actions.intent.MAIN"
+      }
+    },
+    "timestamp": "2020-09-30T15:48:11.273190499Z",
+    "severity": "ERROR",
+    "labels": {
+      "channel": "preview",
+      "querystream": "GOOGLE_USER",
+      "source": "JSON_RESPONSE_VALIDATION"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHGTpT5mFbP6qbOXwkNcHAPQKoZY4pKOg-wX5jd0El9txyyqdJuX8I7Wu0I-AvzGvqyPjHzLY_w",
+    "receiveTimestamp": "2020-09-30T15:48:11.285377168Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nServer: nginx/1.13.6\r\nDate: Wed, 30 Sep 2020 15:48:11 GMT\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nassistant-interaction-error-code: -1\r\nassistant-interaction-error-message: Dialogflow error response\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-68BOEJre3cN9ZO9jMsmkPA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Encoding: gzip\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=GzZ7w6fihWCM7Y9_OBlvMPHlEvMd3GbqstcyKtI2f5usvb1vhvaGoDdvAPSdOB97qbDxj1VDnozgKMlSjR4e0gnCG_VyHHVDO9sI5STLOM6GQ2JyChEeBraFtiWaFTKBGhLJrI-d5A4RKypL-Y_8VRgUcHiSDnq6J1BAxRD3ElU; expires=Thu, 01-Apr-2021 15:48:11 GMT; path=/; domain=.google.com; HttpOnly\r\nVia: 1.1 google\r\nAlt-Svc: clear\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"responseMetadata\": {\n    \"status\": {\n      \"code\": 16,\n      \"message\": \"Unknown error when looking up agent metadata from access token: 3bde84b9f3a74b3fa1dcfaf20cc93e94\"\n    }\n  }\n}.",
+    "insertId": "1esf688gcvj3gk3",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "action_id": "actions.intent.MAIN",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T15:48:11.272735433Z",
+    "severity": "DEBUG",
+    "labels": {
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHGTpT5mFbP6qbOXwkNcHAPQKoZY4pKOg-wX5jd0El9txyyqdJuX8I7Wu0I-AvzGvqyPjHzLY_w",
+    "receiveTimestamp": "2020-09-30T15:48:11.303826694Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-GB\",\"lastSeen\":\"2020-09-30T15:43:57Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHGTpT5mFbP6qbOXwkNcHAPQKoZY4pKOg-wX5jd0El9txyyqdJuX8I7Wu0I-AvzGvqyPjHzLY_w\",\"type\":\"NEW\"},\"inputs\":[{\"intent\":\"actions.intent.MAIN\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"Talk to extra maths revision\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "1esf688gcvj3gk2",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.MAIN"
+      }
+    },
+    "timestamp": "2020-09-30T15:48:11.112481721Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "source": "AOG_REQUEST_RESPONSE",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHGTpT5mFbP6qbOXwkNcHAPQKoZY4pKOg-wX5jd0El9txyyqdJuX8I7Wu0I-AvzGvqyPjHzLY_w",
+    "receiveTimestamp": "2020-09-30T15:48:11.303826694Z"
+  },
+  {
+    "textPayload": "MalformedResponse: Unknown error when looking up agent metadata from access token: 3bde84b9f3a74b3fa1dcfaf20cc93e94",
+    "insertId": "1yh5somg5w45707",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "action_id": "actions.intent.MAIN",
+        "version_id": ""
+      }
+    },
+    "timestamp": "2020-09-30T15:43:57.447583774Z",
+    "severity": "ERROR",
+    "labels": {
+      "channel": "preview",
+      "source": "JSON_RESPONSE_VALIDATION",
+      "querystream": "GOOGLE_USER"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHH-LRMtZaPjhEA6BCSTzXZZUI4mDuXMSBujEpbauQmknX5P20R6nPuIg3BYu70kLu67Rt4cJlc",
+    "receiveTimestamp": "2020-09-30T15:43:57.460275963Z"
+  },
+  {
+    "textPayload": "Received response from agent with body: HTTP/1.1 200 OK\r\nServer: nginx/1.13.6\r\nDate: Wed, 30 Sep 2020 15:43:57 GMT\r\nContent-Type: application/json; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nassistant-interaction-error-code: -1\r\nassistant-interaction-error-message: Dialogflow error response\r\ngoogle-actions-api-version: 2\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 00:00:00 GMT\r\nP3P: CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"\r\nContent-Security-Policy: script-src 'report-sample' 'nonce-J7hZ53zmJJU6itIea/oS5g' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/DialogflowRuntimeAogHttp/cspreport;worker-src 'self'\r\nCross-Origin-Resource-Policy: cross-origin\r\nContent-Encoding: gzip\r\nX-XSS-Protection: 0\r\nX-Frame-Options: SAMEORIGIN\r\nSet-Cookie: NID=204=VJAZvXp0yr9rDQvWAZpCt0o5WVpu8sQMCTV1P-XomJ6z6ba2uPJHurXt3wtAW7QwDhbBFgp5MKhvxKWDyaOkzlJhHEYTZNXVvLXLetrJOwsQMbU84lGx3KPG77xG9oUOhLGuTbgWQsaiVnVXeW4mit7VGBBSD2ryIdnIrRkvlWw; expires=Thu, 01-Apr-2021 15:43:57 GMT; path=/; domain=.google.com; HttpOnly\r\nVia: 1.1 google\r\nAlt-Svc: clear\r\nTransfer-Encoding: chunked\r\n\r\n{\n  \"responseMetadata\": {\n    \"status\": {\n      \"code\": 16,\n      \"message\": \"Unknown error when looking up agent metadata from access token: 3bde84b9f3a74b3fa1dcfaf20cc93e94\"\n    }\n  }\n}.",
+    "insertId": "1fw35vdg2vs7a83",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "version_id": "",
+        "action_id": "actions.intent.MAIN",
+        "project_id": "extra-maths"
+      }
+    },
+    "timestamp": "2020-09-30T15:43:57.447232660Z",
+    "severity": "DEBUG",
+    "labels": {
+      "source": "AOG_REQUEST_RESPONSE",
+      "querystream": "GOOGLE_USER",
+      "channel": "preview"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHH-LRMtZaPjhEA6BCSTzXZZUI4mDuXMSBujEpbauQmknX5P20R6nPuIg3BYu70kLu67Rt4cJlc",
+    "receiveTimestamp": "2020-09-30T15:43:57.459434085Z"
+  },
+  {
+    "textPayload": "Sending request with post data: {\"user\":{\"locale\":\"en-US\",\"lastSeen\":\"2020-09-30T14:26:00Z\",\"userVerificationStatus\":\"VERIFIED\"},\"conversation\":{\"conversationId\":\"ABwppHH-LRMtZaPjhEA6BCSTzXZZUI4mDuXMSBujEpbauQmknX5P20R6nPuIg3BYu70kLu67Rt4cJlc\",\"type\":\"NEW\"},\"inputs\":[{\"intent\":\"actions.intent.MAIN\",\"rawInputs\":[{\"inputType\":\"VOICE\",\"query\":\"Talk to extra maths revision\"}]}],\"surface\":{\"capabilities\":[{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"},{\"name\":\"actions.capability.ACCOUNT_LINKING\"},{\"name\":\"actions.capability.MEDIA_RESPONSE_AUDIO\"}]},\"isInSandbox\":true,\"availableSurfaces\":[{\"capabilities\":[{\"name\":\"actions.capability.SCREEN_OUTPUT\"},{\"name\":\"actions.capability.WEB_BROWSER\"},{\"name\":\"actions.capability.AUDIO_OUTPUT\"}]}],\"requestType\":\"SIMULATOR\"}.",
+    "insertId": "1fw35vdg2vs7a82",
+    "resource": {
+      "type": "assistant_action",
+      "labels": {
+        "project_id": "extra-maths",
+        "version_id": "",
+        "action_id": "actions.intent.MAIN"
+      }
+    },
+    "timestamp": "2020-09-30T15:43:57.285257958Z",
+    "severity": "DEBUG",
+    "labels": {
+      "querystream": "GOOGLE_USER",
+      "channel": "preview",
+      "source": "AOG_REQUEST_RESPONSE"
+    },
+    "logName": "projects/extra-maths/logs/actions.googleapis.com%2Factions",
+    "trace": "projects/474638043489/traces/ABwppHH-LRMtZaPjhEA6BCSTzXZZUI4mDuXMSBujEpbauQmknX5P20R6nPuIg3BYu70kLu67Rt4cJlc",
+    "receiveTimestamp": "2020-09-30T15:43:57.459434085Z"
+  }
+]
